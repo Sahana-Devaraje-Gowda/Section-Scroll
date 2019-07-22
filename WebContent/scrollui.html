@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
+<link href='scroll.css' rel='stylesheet' type='text/css'>
+<head>
+<meta charset="UTF-8">
+<title>XYZ Company Website</title>
+<script type="text/javascript" src="scrolljs.js"></script>
+<style>
+* { 
+	font-family: 'Lato', sans-serif;
+	font-weight: 250;
+	transition: all .1s ease; 
+}
+
+html, body {
+		height: 100%;
+}
+
+.page_section {
+		height: 480px;
+		width: 50%;
+		margin-left: 30%;
+		margin-top: 2%;
+		padding: 5em;
+    background: linear-gradient(40deg, #40a8ce 10%, #17879d 80%);
+		color: white;
+		box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.5);
+}
+
+.navigation {
+  	position: fixed; 
+		width: 25%;
+		margin-left: 2%;
+  	background-color: #fff;
+  	color: #fff;
+  	
+  	&_link {
+		display: block;
+    	color: #ddd; 
+    	text-decoration: none;
+    	padding: 1em;
+		font-weight: 400;
+		
+		&:hover {
+			background-color: #aaa;
+		}
+	
+	   &.active {
+	   		color: white;
+			background-color: rgba(0,0,0,0.1);
+	   }
+  	}
+}
+
+</style>
+</head>
+<body>
+<nav class="navigation" id="mainNav">
+			<a class="navigation_link" href="#1">Welcome</a></br>
+			<a class="navigation_link" href="#2">About XYZ</a></br>
+			<a class="navigation_link" href="#3">Company Mission</a></br>
+			<a class="navigation_link" href="#4">XYZ Products</a></br>
+				<a class="navigation_link" href="#5">XYZ Stores</a></br>
+				<a class="navigation_link" href="#6">XYZ Community</a></br>
+				<a class="navigation_link" href="#7">Contact XYZ</a></br>
+</nav>
+
+<div class="page_section hero" id="1">
+			<h1>Scrolling through the sections of XYZ company. Click the Sections on your left to navigate</h1>
+</div>
+<div class="page_section" id="2">
+			<h1>XYZ Company was started by IT veterans in 2004. It is used to handle and process data in a secure way.</h1>
+</div>
+<div class="page_section" id="3">
+			<h1>Our mission is to organize the world’s information and make it universally accessible and useful.</h1>
+</div>
+<div class="page_section" id="4">
+			<h1>XYZ Products are Maps, Search Engines, Android apps for gaming.</h1>
+</div>
+<div class="page_section" id="5">
+			<h1>XYZ Stores are in Lyon, Paris, Amsterdam and USA</h1>
+</div>
+<div class="page_section" id="6">
+			<h1>XYZ Community is committed to significantly improving the lives of as many people as possible.</h1>
+</div>
+<div class="page_section" id="7">
+			<h1>Contact Us at abc@xyz.com</h1>
+</div>
+</body>
+</html>
